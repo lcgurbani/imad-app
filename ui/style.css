@@ -20,3 +20,12 @@ body {
     height: 200px;
 }
 
+.container {
+margin: 0 auto;
+max-width: 800px;
+color: #de5050;
+font-family: san-serif;
+padding-top: 60px;
+padding-left: 20px;
+padding-right: 20px;
+}
