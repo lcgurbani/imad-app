@@ -12,6 +12,6 @@ function moveRight () {
     marginLeft=marginLeft + 10;
     madi.style.marginLeft = marginLeft + 10;
 }
- madii.onclick= function() {
+ madi.onclick= function() {
      var interval =setInterval(moveRight,100);
  };  
