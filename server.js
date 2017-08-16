@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var article = { 
+var articles = { 
 'article-one' : {
     title : 'Article one| lokesh Gurbani',
     heading : 'Article-one',
@@ -89,7 +89,7 @@ app.get('/:articleName', function (req, res) {
 //articleName== article-one
 //articles[articleName] == contents of article one object
 var articleName = req.params.articleName;
-    res.send(createtemplate(article(articleName)));
+    res.send(createtemplate(articles(articleName)));
 });
 app.get('/article-two', function (req, res)  {
    
