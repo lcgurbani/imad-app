@@ -89,7 +89,7 @@ app.get('/:articleName', function (req, res) {
 //articleName== article-one
 //articles[articleName] == contents of article one object
 var articleName = req.params.articleName;
-    res.send(createtemplate(articles(articleName)));
+    res.send(createtemplate(article(articleName)));
 });
 app.get('/article-two', function (req, res)  {
    
