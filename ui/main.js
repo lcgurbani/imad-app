@@ -9,7 +9,7 @@ var element = document.getElementById("madi");
 
 var marginLeft = 0;
 function moveRight () {
-    marginLeft=marginleft +  10;
+    marginLeft=marginLeft +  10;
     madi.style.marginLeft = marginLeft +10;
 }
  madi.onclick= function() {
