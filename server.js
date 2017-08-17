@@ -91,13 +91,16 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
     res.sendFile(path.join(__dirname,'ui', 'style.css'));
 });
+
+
 var names = [];
-app.get('/submit-name/:name', function (req, res) {
+app.get('/submit-name', function (req, res) {
     //Get the name from the request
     var name =req.query.name;
     names.push(name);
     res.send(JSON.stringify(names));
 });
+
 app.get('/:articleName', function (req, res) {
 //articleName== article-one
 //articles[articleName] == contents of article one object
