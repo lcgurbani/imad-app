@@ -4,7 +4,7 @@ var counter =0;
 
 button.onclick = function() {
     
-    //make the request to the counter endpoint
+    //Create the request
         var request = new XMLHttpRequest();
     //Capture the response and store the variable in it
         request.onreadystatechange = function() {
@@ -18,6 +18,6 @@ button.onclick = function() {
             }
         };
      // Make the request
-     request.open('Get', 'http://lcgurbani12326.imad.hasura.io/counter', true);
+     request.open('GET', 'http://lcgurbani12326.imad.hasura.io/counter', true);
      request.send(null);
 };
