@@ -95,7 +95,7 @@ app.get('/ui/style.css', function (req, res) {
 var names = [];
 app.get('/submit-name', function (req, res) { //submit-name?name-xxxx
     //Get the name from the request
-    var name =req.query.name;
+    var name =req.query.names;
     names.push(name);
     res.send(JSON.stringify(names));
 });
