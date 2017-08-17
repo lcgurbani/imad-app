@@ -1,10 +1,11 @@
 //counter code
-var button=document.getElementById('counter');
+var button = document.getElementById('counter');
 
 button.onclick = function() {
     
     //Create the request
      var request = new XMLHttpRequest();
+     
     //Capture the response and store the variable in it
        request.onreadystatechange = function() {
          if(request.readyState === XMLHttpRequest.DONE)   {
@@ -19,6 +20,6 @@ button.onclick = function() {
     
     
     //make the request
-    request.open('GET','http://lcgurbani12326.imad.hasura.io/counter' , true);
+    request.open('GET','http://lcgurbani12326.imad.hasura-app.io/counter' , true);
     request.send(null);
 };
