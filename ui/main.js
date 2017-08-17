@@ -15,6 +15,7 @@ button.onclick = function() {
                         span.innerHTML = counter.toString();
                     }
             }
+            //not done yet
         };
         
      // Make the request
