@@ -10,8 +10,7 @@ button.onclick = function() {
             //Take some action
             if(request.status === 200) {
                //submit the name
-            var nameInput = document.getElementById('name'); 
-            var name = nameInput.value;
+            
             var submit = document.getElementById('submit_btn');
             submit.onclick = function() {
             //Make a request to the server and send the name
@@ -32,6 +31,8 @@ button.onclick = function() {
     };
     
     // Make a request
+    var nameInput = document.getElementById('name'); 
+    var name = nameInput.value;
     request.open('GET', 'http://lcgurbani12326.imad.hasura-app.io/submit-name?name=' +name, true);
     request.send(null);
 };
