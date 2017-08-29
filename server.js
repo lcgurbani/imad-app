@@ -123,7 +123,7 @@ app.get('/articles/:articleName', function (req,res) {
     //To abstract the avlue of articleNme we use paarams
     
     
-    Pool.query("SELECT * FROM article where title = '" + req.params.articleName + "'", function (err, result) {
+    Pool.query("SELECT * FROM article where title = $1" [req.param.articleName], function (err, result) {
         if (err) {
             res.send(500).send(err.toString());
         } else  {
